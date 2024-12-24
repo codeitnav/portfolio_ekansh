@@ -5,7 +5,7 @@ import { IconHome, IconMessage, IconUser, IconBriefcase, IconCode, IconCertifica
 import { useTheme } from "next-themes"; 
 
 export function FloatingNavDemo() {
-  const { resolvedTheme, setTheme } = useTheme(); 
+  const { resolvedTheme } = useTheme(); 
   const [mounted, setMounted] = useState(false); 
 
   useEffect(() => {

@@ -85,12 +85,6 @@ const SkillsSection = () => {
                     >
                       {active.title}
                     </motion.h3>
-                    <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-sm"
-                    >
-                      {active.description}
-                    </motion.p>
                   </div>
 
                   <motion.a
@@ -121,7 +115,7 @@ const SkillsSection = () => {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-4xl mx-auto w-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
@@ -145,12 +139,6 @@ const SkillsSection = () => {
                 >
                   {card.title}
                 </motion.h3>
-                <motion.p
-                  layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
-                >
-                  {card.description}
-                </motion.p>
               </div>
             </div>
             <motion.button
@@ -164,11 +152,10 @@ const SkillsSection = () => {
       </ul>
     </>
   );
-}
+};
 
 const cards = [
   {
-    description: "Intermediate",
     title: "C",
     src: cImg,
     ctaText: "More",
@@ -180,7 +167,6 @@ const cards = [
     ),
   },
   {
-    description: "Proficient",
     title: "Python",
     src: python,
     ctaText: "More",
@@ -192,7 +178,6 @@ const cards = [
     ),
   },
   {
-    description: "Proficient",
     title: "Microsoft Excel",
     src: excel,
     ctaText: "More",
@@ -203,7 +188,6 @@ const cards = [
     ),
   },
   {
-    description: "Proficient",
     title: "Power BI",
     src: bi,
     ctaText: "More",
@@ -214,7 +198,6 @@ const cards = [
     ),
   },
   {
-    description: "Proficient",
     title: "HTML 5",
     src: html,
     ctaText: "More",
@@ -225,7 +208,6 @@ const cards = [
     ),
   },
   {
-    description: "Proficient",
     title: "CSS",
     src: css,
     ctaText: "More",
