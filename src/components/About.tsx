@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className="text-black dark:text-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Text Section */}
+          
           <div className="flex flex-col space-y-4 text-left">
             <h2 className="text-3xl sm:text-4xl font-bold dark:text-white">
               About Me
