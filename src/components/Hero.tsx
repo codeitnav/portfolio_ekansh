@@ -2,7 +2,8 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link"; // Import Link from Next.js
 import CV_button from "./CV_Button";
 import profile from "../../public/ekansh.jpg";
 
@@ -35,21 +36,21 @@ const Hero = () => {
             An Electrical Engineering Undergrad based in Delhi.
           </p>
 
-          <a href="assets/my_resume.pdf" target="_blank" rel="noopener noreferrer">
+          <Link href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
             <CV_button
               title="Résumé"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </Link>
         </div>
 
         <div className="flex justify-center sm:ml-12 md:ml-16 lg:ml-20">
-          <Image 
-            src={profile} 
-            alt="ProfilePic" 
-            width={350} 
-            height={350} 
+          <Image
+            src={profile}
+            alt="ProfilePic"
+            width={350}
+            height={350}
             className="rounded-full mx-10 sm:mx-12 md:mx-16 lg:mx-20"
           />
         </div>
