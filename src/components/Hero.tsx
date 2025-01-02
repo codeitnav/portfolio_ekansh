@@ -36,7 +36,7 @@ const Hero = () => {
             An Electrical Engineering Undergrad based in Delhi.
           </p>
 
-          <Link href="https://github.com/codeitnav/portfolio_ekansh/blob/main/src/components/assets/my_resume.pdf" target="_blank" rel="noopener noreferrer">
+          <Link href="https://drive.google.com/file/d/1Re_sBQZU7vc2r4Mv2oiRpsYGq3KRnJhJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <CV_button
               title="Résumé"
               icon={<FaLocationArrow />}
